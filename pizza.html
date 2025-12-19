@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Amit Saha</h1>
+      <nav>
+        <a href="index.html">about</a> //
+        <a href="papers.html">current work + papers</a> //
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <div style="text-align: center;">
+        <img src="assets/pizza.png" alt="this homemade pizza would look great if you could see it" style="max-width: 70%; height: auto; border-radius: 12px;" />
+        <div><i>ny style with fried basil</i></div>
+      </div>
+    </main>
+    <footer>
+      <small>&copy; <span id="year"></span> Amit Saha</small>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
