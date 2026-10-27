@@ -85,7 +85,7 @@ ul {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 36%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 220px);
   gap: 28px;
   align-items: start;
 }
@@ -103,6 +103,8 @@ ul {
   grid-column: 2;
   grid-row: 1;
   align-self: center;
+  width: 100%;
+  max-width: 220px;
   margin: 0;
 }
 
@@ -150,8 +152,6 @@ ul {
 
   .portrait {
     grid-column: 1;
-    width: 100%;
-    max-width: 280px;
     margin: 0 auto;
   }
 
