@@ -14,7 +14,7 @@ Contact details (email, LinkedIn, and Twitter) are on the homepage at `#contact`
 
 The homepage uses a centered name with site navigation directly below it. The biography and research statement span the content width, with Google Scholar, email, LinkedIn, and Twitter below the text. Both link rows use `//` separators. The photo and caption are not displayed; the original `assets/me.jpeg` is retained. Papers are unnumbered, section headings are left-aligned, and organizations, academics, industry, and personal interests are grouped under “Beyond Research.” Homepage-specific styles are scoped to `.home` so secondary pages retain their layout.
 
-The content area has a maximum width of 960px. Header navigation sits 4px below the name, with a 28px gap before the page content. Stylesheet references include a shared `?v=3` cache version; increment it across all HTML pages when publishing stylesheet changes.
+The content area has a maximum width of 760px. Header navigation sits 4px below the name, with a 28px gap before the page content. Stylesheet references include a shared `?v=4` cache version; increment it across all HTML pages when publishing stylesheet changes.
 
 The cream background and selective research-text colors are retained. Both unvisited and visited links explicitly use underlined medium-grey text (`#666`), darkening to `#444` on hover, keyboard focus, and activation. The research introduction summarizes the statement of purpose.
 
