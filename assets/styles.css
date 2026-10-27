@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 24px 16px;
 }
@@ -66,9 +66,9 @@ ul {
   margin-bottom: 20px;
 }
 
-/* Homepage: introduction beside the portrait, then full-width sections. */
+/* Homepage layout */
 .home header {
-  max-width: 760px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 24px 16px 28px;
   text-align: center;
@@ -83,43 +83,10 @@ ul {
   padding-top: 0;
 }
 
-.intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 220px);
-  gap: 28px;
-  align-items: start;
-}
-
-.intro-copy {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.intro-copy > p:first-child {
+.intro > p:first-child {
   margin-top: 0;
 }
 
-.portrait {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: center;
-  width: 100%;
-  max-width: 220px;
-  margin: 0;
-}
-
-.portrait img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.portrait figcaption {
-  margin-top: 6px;
-  font-size: 0.85em;
-  text-align: center;
-}
 
 .home nav {
   margin-top: 16px;
@@ -144,21 +111,6 @@ ul {
   padding-left: 0;
 }
 
-@media (max-width: 600px) {
-  .intro {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
-  }
-
-  .portrait {
-    grid-column: 1;
-    margin: 0 auto;
-  }
-
-  .intro-copy {
-    grid-row: 2;
-  }
-}
 
 code, kbd, pre, samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
