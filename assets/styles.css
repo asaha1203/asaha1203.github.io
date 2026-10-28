@@ -1,16 +1,29 @@
 /* Base layout and typography */
 body {
-  background-color: #fcf7e0; /* cream */
-  color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #2f2f2f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.75;
 }
 
 .container {
   max-width: 760px;
   margin: 0 auto;
   padding: 24px 16px;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    font-size: 15px;
+  }
 }
 
 /* Header and navigation */
@@ -37,25 +50,34 @@ nav a {
 /* Links */
 a:link,
 a:visited {
-  color: #666;
-  text-decoration: underline;
+  color: #0645ad;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus-visible,
 a:active {
-  color: #444;
+  color: #06e;
+  text-decoration: underline;
 }
 
 /* Content helpers */
+h1,
+h2 {
+  color: #0b3370;
+  line-height: 1.3;
+}
+
 h2 {
   margin-top: 24px;
   margin-bottom: 4px;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 hr {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e7edf7;
   margin: 16px 0;
 }
 
@@ -68,7 +90,12 @@ ul {
 }
 
 .publications li {
-  margin-bottom: 20px;
+  margin-bottom: 1.2em;
+  padding-left: 0.15em;
+}
+
+.publications .authors {
+  color: #4f4f4f;
 }
 
 /* Homepage layout */
@@ -81,7 +108,7 @@ ul {
 
 .home header h1 {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .home main {
@@ -114,6 +141,7 @@ ul {
 .home .publications {
   list-style: none;
   padding-left: 0;
+  margin-top: 0.35em;
 }
 
 
